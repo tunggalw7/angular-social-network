@@ -1,0 +1,82 @@
+<div class="content-area">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="title-label">Videos</div>
+        <div class="browse-label">Browse all videos</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
+            <div *ngFor="let item of videos.main" class="main content" [ngStyle]="{'background': 'url(' + item.background + ') no-repeat 0 0 / cover'}"> 
+                <div class="info">
+                    <div class="title">                        
+                        {{item.title}}
+                    </div>
+                    <div class="sub-title">                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>              
+                                {{item.name}} 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="views">              
+                    {{item.views}} 
+                </span>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <div *ngFor="let item of videos.right" class="sub content" [ngStyle]="{'background': 'url(' + item.background + ') no-repeat 0 0 / cover'}"> 
+                <div class="info">
+                    <div class="sub-title">                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                {{item.name}} 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="views">              
+                    {{item.views}} 
+                </span>
+            </div>    
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of videos.bottom" class="col-md-4 col-xs-12">
+            <div class="sub content" [ngStyle]="{'background': 'url(' + item.background + ') no-repeat 0 0 / cover'}"> 
+                <div class="info">
+                    <div class="sub-title">                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                {{item.name}} 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="views">              
+                    {{item.views}} 
+                </span>
+            </div>          
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <div class="sub content upload-area"> 
+                <div class="upload-info">
+                    <div class="sub-title">                        
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="round">
+                                <i class="fa fa-upload"></i>
+                            </div>
+                            <div class="text-area">
+                                <span>
+                                    Upload 
+                                </span>
+                                <span>
+                                    Your Own Video 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+</div>

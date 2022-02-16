@@ -1,0 +1,45 @@
+.activity-wrapper{
+    .panel{        
+        border-bottom: 2px solid;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .title-label{        
+        font-size: 28px;
+    }
+    .content{        
+        position: relative;
+        &.main{
+            height: 325px;
+            &:hover{
+                cursor: pointer;
+                filter: grayscale(100%);
+            }
+        }
+        &.sub{
+            height: 150px;
+            margin-bottom: 25px;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+        .info{            
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #FFFFFF;
+            font-weight: bold;
+            background: #943f44;
+            opacity: 0.8;
+            padding: 0 5px;
+            border-radius: 5px;
+            .title{
+                font-size: 20px;
+            }
+            .sub-title{
+                font-size: 12px;
+            }
+        }
+    }
+}

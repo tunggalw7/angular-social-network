@@ -1,0 +1,21 @@
+<div class="activity-wrapper">
+    <div class="d-flex justify-content-between align-items-center panel">
+        <div class="title-label">Channels</div>
+        <div class="browse-label">Browse all channels</div>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of channels" class="col-md-6 col-xs-12">
+            <div class="sub content" [ngStyle]="{'background': 'url(' + item.background + ') no-repeat 0 0 / cover'}"> 
+                <div class="info">
+                    <div class="sub-title">                        
+                        <div class="d-flex">
+                            <span>
+                                {{item.channel}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+</div>

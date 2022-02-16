@@ -1,0 +1,65 @@
+.activity-wrapper{
+    .panel{        
+        border-bottom: 2px solid;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .title-label{        
+        font-size: 28px;
+    }
+    .activity-content{        
+        margin-bottom: 25px;
+        &:first-child{            
+            border: solid;
+            padding: 5px;
+        }
+        img{            
+            width: 100px;
+            margin-right: 1em;
+        }
+        .info{
+            .title{                
+                span{                    
+                    font-size: 10px;
+                }
+            }
+            .sub-title{              
+                font-size: 14px;
+                max-width: 300px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .activity{             
+                font-size: 10px;
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .info{
+        .title{
+            line-height: 12px;
+        }
+        .sub-title{
+            line-height: 38px;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .info{
+        .title{
+            line-height: 18px;
+        }
+        .sub-title{
+            line-height: unset;
+            white-space: unset;
+        }
+    }
+}
